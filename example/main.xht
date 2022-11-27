@@ -1,0 +1,79 @@
+<script property export>
+    let name = 'world';
+    $attributes
+    
+    $onMount(()=>{
+
+    })
+    $: degrees = (name.length-5) * 5;
+</script>
+
+<img class="tujuh" {...$attributes} src="/malinajs.svg" alt="Malina.js Logo" style:transform={`rotate(${degrees}deg)`} />
+<Img src="/malinajs.svg" alt="Malina.js Logo" style:transform={`rotate(${degrees}deg)`} />
+{* let a = z}
+<h1 {...$attributes} class="">Helloo {name}!</h1>
+
+<Heading:title>
+    Helloo {@html name}!
+</Heading>
+
+<Child>
+  <^root class="border" />
+  <^name style="font-weight: bold; color: red" />
+  <^input type="text" *action :value />
+</Child>
+
+<div ^root>
+  <span ^name>Name</span>
+  <input ^input />
+</div>
+
+<fragment:setia property export>
+    <slot:juga />
+</fragment>
+
+{#each items as item}
+
+{/each}
+
+{#if sdfdsf}
+
+{:else}
+
+{/if}
+
+{#slot:tegas}
+
+<div #pindah {...$attributes} @click={click($event, $element)}>
+</div>
+
+<div on:eventName={expression} @eventName={expression} @click:handler @click={e=>handler(e)} >
+
+</div>
+
+<div @click|preventDefault={e=>handler(e)} :binding @click:draw *draw #rest use:action={param}>
+    <input *{$element.focus()} type="text" :value :value={name} *{$element.focus()} />
+</div>
+
+<div style:target="" class:selected="{close=!close}">Edit and save file <code>src/App.xht</code> to reload</div>
+
+<style type="scss" global>
+    img {
+        display: block;
+        width: 200px;
+        margin: 60px auto;
+        transition: .2s;
+    }
+    h1, div {
+        text-align: center;
+        min-width: 300px;
+        margin: 40px auto;
+    }
+
+    :global(p){
+        
+    }
+    input>:global(p) {
+        font-size: 24px;
+    }
+</style>
