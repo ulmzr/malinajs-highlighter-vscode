@@ -1,36 +1,50 @@
 {
-   "name": "vscode-malinajs-highlight",
-   "displayName": "Malina Syntax Highlighter",
-   "description": "Syntax highlightning for Malina.js framework",
-   "version": "0.1.1",
-   "publisher": "Ulmzr",
-   "engines": {
-      "vscode": "^1.68.0"
-   },
-   "categories": [
-      "Programming Languages"
-   ],
-   "contributes": {
-      "languages": [
-         {
-            "id": "xht",
-            "aliases": [
-               "Malina",
-               "xht"
-            ],
-            "extensions": [
-               ".xht",
-               ".ma"
-            ],
-            "configuration": "./language-configuration.json"
-         }
-      ],
-      "grammars": [
-         {
-            "language": "xht",
-            "scopeName": "source.xht",
-            "path": "./syntaxes/xht.tmLanguage.json"
-         }
-      ]
-   }
+	"name": "malina-js-highlight",
+	"displayName": "Malina.js Syntax Highlighter",
+	"description": "Syntax highlightning for Malina.js framework",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.47.0"
+	},
+	"galleryBanner": {
+		"color": "#333333",
+		"theme": "dark"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ulmzr/vscode-malina-highlight.git"
+	},
+	"homepage": "https://github.com/ulmzr/vscode-malina-highlight#readme",
+	"publisher": "ulmzr",
+	"contributes": {
+		"languages": [
+			{
+				"id": "malinajs",
+				"aliases": [
+					"Malina.js",
+					"malinajs"
+				],
+				"extensions": [
+					".xht",
+					".ma"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "malinajs",
+				"scopeName": "source.malinajs",
+				"path": "./syntaxes/malinajs.tmLanguage.json",
+				"embeddedLanguages": {
+					"text.html": "xml",
+					"source.css": "css",
+					"source.js": "javascript"
+				}
+			}
+		]
+	}
 }

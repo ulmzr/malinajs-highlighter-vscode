@@ -1,7 +1,7 @@
 {
    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-   "name": "Malina",
-   "scopeName": "source.xht",
+   "name": "Malina.js",
+   "scopeName": "source.malinajs",
    "patterns": [
       {
          "include": "#comment"
@@ -21,16 +21,17 @@
    ],
    "repository": {
       "comment": {
+         "name": "comment.block",
          "begin": "<!--",
          "beginCaptures": {
             "0": {
-               "name": "punctuation.definition.comment"
+               "name": "punctuation.definition.tag"
             }
          },
          "end": "-->",
          "endCaptures": {
             "0": {
-               "name": "punctuation.definition.comment"
+               "name": "punctuation.definition.tag"
             }
          }
       },

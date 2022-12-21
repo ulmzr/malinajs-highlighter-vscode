@@ -1,7 +1,3 @@
-# Malina vscode highlight
+# Malina.JS Syntax Highlight
 
-## Features
-
-Not so perfect but I am using it every day work.
-
-**Enjoy!**
+Syntax highlighting for [Malina.js](https://malinajs.github.io) components.
