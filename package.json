@@ -1,7 +1,7 @@
 {
-	"name": "malina-js-highlight",
-	"displayName": "Malina.js Syntax Highlighter",
-	"description": "Syntax highlightning for Malina.js framework",
+	"name": "malinajs-highlighter",
+	"displayName": "MalinaJS Syntax Highlighter",
+	"description": "Syntax highlightning for MalinaJS framework",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.47.0"
@@ -15,9 +15,9 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/ulmzr/vscode-malina-highlight.git"
+		"url": "https://github.com/ulmzr/malinajs-highlighter-vscode.git"
 	},
-	"homepage": "https://github.com/ulmzr/vscode-malina-highlight#readme",
+	"homepage": "https://github.com/ulmzr/malinajs-highlighter-vscode#readme",
 	"publisher": "ulmzr",
 	"contributes": {
 		"languages": [
