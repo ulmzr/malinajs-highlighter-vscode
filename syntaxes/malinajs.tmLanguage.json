@@ -152,7 +152,7 @@
       },
       "keywords": {
          "name": "keyword.control",
-         "match": "([@#:/])((?:if|else|each|await|then|catch|html|slot|fragment))(?:(:)([a-zA-Z0-9_]+))?",
+         "match": "([@#:/])((?:if|elif|else|each|await|then|catch|html|slot|fragment))(?:(:)([a-zA-Z0-9_]+))?",
          "captures": {
             "1": {
                "name": "punctuation.definition.tag"
